@@ -27,8 +27,8 @@ git clone [https://github.com](https://github.com/mhng-fp/python_fastapi.git)
 ### 2. To run without docker
 
 The frontend and backend application components will be accessible at:
-*   **Frontend (Vite + React):** `http://localhost:5173` at frontend folder
-*   **Backend API:** `http://localhost:8000/hello` at app folder
+*   **Frontend (Vite + React):** `npm run dev` at frontend folder. Access `http://localhost:5173`.
+*   **Backend API:** `uvicorn main:app --host 0.0.0.0 --port 8000` at app folder. Access `http://localhost:8000/hello`.
 
 ---
 
