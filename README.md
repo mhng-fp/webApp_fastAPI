@@ -21,8 +21,7 @@ Ensure you have the following installed on your local machine:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com
-cd your-repo-name
+git clone [https://github.com](https://github.com/mhng-fp/python_fastapi.git)
 ```
 
 ### 3. Spin Up Containers
