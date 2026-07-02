@@ -24,8 +24,16 @@ Ensure you have the following installed on your local machine:
 git clone [https://github.com](https://github.com/mhng-fp/python_fastapi.git)
 ```
 
-### 3. Spin Up Containers
-Launch the application using Docker Compose. This will build the images and start the services.
+### 2. To run without docker
+
+The frontend and backend application components will be accessible at:
+*   **Frontend (Vite + React):** `http://localhost:5173` at frontend folder
+*   **Backend API:** `http://localhost:8000/hello` at app folder
+
+---
+
+### 3. To run with docker
+Launch the application using Docker Compose. This will build the images and start both frontend and backend services.
 
 ```bash
 docker compose up --build
