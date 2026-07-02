@@ -10,13 +10,6 @@ A modern, high-performance web application skeleton utilizing FastAPI for a robu
 
 ---
 
-## 🛠️ Prerequisites
-
-Ensure you have the following installed on your local machine:
-*   [Docker Desktop](https://docker.com)
-
----
-
 ## 🏃 Getting Started
 
 ### 1. Clone the Repository
@@ -30,19 +23,29 @@ The frontend and backend application components will be accessible at:
 *   **Frontend (Vite + React):** `npm run dev` at frontend folder. Access `http://localhost:5173`.
 *   **Backend API:** `uvicorn main:app --host 0.0.0.0 --port 8000` at app folder. Access `http://localhost:8000/hello`.
 
+### 2. To kill processes
+
+*   lsof -i :5173
+*   kill -9 xx
+
 ---
 
 ### 3. To run with docker
-Launch the application using Docker Compose. This will build the images and start both frontend and backend services.
 
-```bash
-docker compose up --build
-```
+*   Ensure you have [Docker Desktop](https://docker.com) installed and docker engine running.
+*   `docker build . -t my-app:1.0` at root folder. `docker images -a` to query.
+*   `docker run -d -p 8080:80 --name my-running-container my-app:1.0` at root folder. `docker ps -a` `docker logs -f my-running-container`  to query. Access `http://localhost:8080/hello`.
+
+### 4. To kill docker containers
+*   `docker stop fastapi-app my-running-container`
+*   `docker rm my-running-container`
+*   `docker rmi my-app:1.0`
+*   `docker system prune -a --volumes`  
+
+---
 
 Once the build completes, the application components will be accessible at:
-*   **Frontend (Vite + React):** `http://localhost:5173` at frontend folder
-*   **Backend API:** `http://localhost:8000/hello` at app folder
-*   **Interactive API Docs (Swagger UI):** `http://localhost:8000/docs`
+*   **Frontend (Vite + React):** `http://localhost:5173`
 
 ---
 
