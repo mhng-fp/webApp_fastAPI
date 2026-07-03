@@ -1,4 +1,4 @@
-# Full-Stack FastAPI, Vite & React Boilerplate
+# Full-Stack Docker - Python FastAPI - Vite - React
 
 A modern, high-performance web application skeleton utilizing FastAPI for a robust backend and React powered by Vite for a lightning-fast frontend. The entire ecosystem is fully containerized with Docker for seamless development and deployment.
 
