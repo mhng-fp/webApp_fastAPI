@@ -4,8 +4,8 @@ A modern, high-performance web application skeleton utilizing FastAPI for a robu
 
 ## 🚀 Tech Stack
 
-*   **Backend:** FastAPI (Python 3.11+, Pydantic v2)
-*   **Frontend:** React (TypeScript/JavaScript), Vite
+*   **Backend:** PythonFastAPI 
+*   **Frontend:** React, Vite
 *   **Containerization:** Docker, Docker Compose
 
 ---
