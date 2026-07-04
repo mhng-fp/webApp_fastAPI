@@ -38,7 +38,7 @@ The frontend and backend application components will be accessible at:
 ### 4. To run with docker compose
 
 *   Ensure you have [Docker Desktop](https://docker.com) installed and docker engine running.
-*   At root folder, `docker compose up --build -d`
+*   At root folder, `docker compose up --build -d`. Access `http://localhost:8080/hello` and `http://localhost:5173`.
 
   
 ## 📂 DOCKER CONTAINER FILESYSTEM
