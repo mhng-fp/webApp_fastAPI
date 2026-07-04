@@ -1,14 +1,13 @@
-# Full-Stack Docker - Python FastAPI - Vite - React
+# 🔗 URL Shortener
 
-A modern, high-performance web application skeleton utilizing FastAPI for a robust backend and React powered by Vite for a lightning-fast frontend. The entire ecosystem is fully containerized with Docker for seamless development and deployment.
+This is a web application designed to instantly transform long, unwieldy URLs into clean, shareable aliases.
+This project uses a Python FastAPI - Vite - React architecture, utilizing FastAPI for a robust backend and React powered by Vite for a lightning-fast frontend. The entire ecosystem is containerized with Docker for seamless development and deployment.
 
-## 🚀 Tech Stack
+## 🛠️ Tech Stack
 
-*   **Backend:**  FastAPI
-*   **Frontend:** React, Vite
+*   **Backend:** Python FastAPI
+*   **Frontend:** React, Vite, Javascript
 *   **Containerization:** Docker, Docker Compose
-
----
 
 
 ## 🏃 Getting Started
