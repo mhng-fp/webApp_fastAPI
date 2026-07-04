@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    ports:
+      - "8080:80"          # Maps internal container port 80 to localhost:8000
+    volumes:
+      - ./app:/code/app    # Enables hot-reloading for Python code changes
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile  # FIX: Explicitly points to your frontend Dockerfile
+    ports:
+      - "5173:5173"        # Maps React port
+    volumes:
+      - ./frontend:/app    # Enables hot-reloading for React code changes
+      - /app/node_modules  # Safeguards container dependencies
+    stdin_open: true       # FIX: Keeps the React interactive process open
+    tty: true              # FIX: Allocates a virtual terminal to stop crashes
+    depends_on:
+      - backend
+
+

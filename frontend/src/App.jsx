@@ -4,7 +4,7 @@ function App() {
   const [text, setText] = useState("Waiting for backend...");
 
   useEffect(() => {
-    fetch('http://localhost:8000/hello')
+    fetch('http://localhost:8080/hello')
         .then(res => res.json())
         .then(data => setText(data.message))
         .catch(err => setText("Error: " + err.message));
