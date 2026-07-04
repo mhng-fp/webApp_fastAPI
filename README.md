@@ -4,7 +4,7 @@ A modern, high-performance web application skeleton utilizing FastAPI for a robu
 
 ## 🚀 Tech Stack
 
-*   **Backend:** PythonFastAPI 
+*   **Backend:**  FastAPI
 *   **Frontend:** React, Vite
 *   **Containerization:** Docker, Docker Compose
 
@@ -22,7 +22,7 @@ git clone https://github.com/mhng-fp/python_fastapi.git
 The frontend and backend application components will be accessible at:
 *   **Backend API:** At app folder, `uvicorn main:app --host 0.0.0.0 --port 8080`. Access `http://localhost:8080/hello`.
 *   **Frontend (Vite + React):** At frontend folder, `npm run dev`. Access `http://localhost:5173`.
-  
+
 
 ### 3. To run with docker
 
@@ -40,9 +40,10 @@ The frontend and backend application components will be accessible at:
 *   Ensure you have [Docker Desktop](https://docker.com) installed and docker engine running.
 *   At root folder, `docker compose up --build -d`. Access `http://localhost:8080/hello` and `http://localhost:5173`.
 
-  
+
 ## 📂 DOCKER CONTAINER FILESYSTEM
 
+```text
 ===================================================================================================
                                   🐳 COMPLETE DESKTOP RUNTIME ARCHITECTURE
 ===================================================================================================
@@ -93,6 +94,6 @@ The frontend and backend application components will be accessible at:
                   | 📁 LOCAL MAC FOLDER:          |                 | 📁 LOCAL MAC FOLDER:    |
                   |    ./frontend/src/            |                 |    ./app/               |
                   +───────────────────────────────+                 +─────────────────────────+
-
+```
 
 ---
