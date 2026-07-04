@@ -10,6 +10,7 @@ A modern, high-performance web application skeleton utilizing FastAPI for a robu
 
 ---
 
+
 ## 🏃 Getting Started
 
 ### 1. Clone the Repository
@@ -19,7 +20,6 @@ git clone https://github.com/mhng-fp/python_fastapi.git
 
 ### 2. To run without docker
 
-The frontend and backend application components will be accessible at:
 *   **Backend API:** At app folder, `uvicorn main:app --host 0.0.0.0 --port 8080`. Access `http://localhost:8080/hello`.
 *   **Frontend (Vite + React):** At frontend folder, `npm run dev`. Access `http://localhost:5173`.
 
@@ -32,16 +32,18 @@ The frontend and backend application components will be accessible at:
 *   At root folder, `docker build -f frontend/Dockerfile -t my-react-app:1.0 ./frontend`
 *   At root folder, `docker run -d -p 5173:5173 --name running-frontend my-react-app:1.0`. Access `http://localhost:5173`.
 
----
-
 
 ### 4. To run with docker compose
 
 *   Ensure you have [Docker Desktop](https://docker.com) installed and docker engine running.
 *   At root folder, `docker compose up --build -d`. Access `http://localhost:8080/hello` and `http://localhost:5173`.
 
+---
 
-## 📂 DOCKER CONTAINER FILESYSTEM
+
+
+## 📂 Docker Container Filesystem
+
 
 ```text
 ===================================================================================================
@@ -94,7 +96,6 @@ The frontend and backend application components will be accessible at:
                   | 📁 LOCAL MAC FOLDER:          |                 | 📁 LOCAL MAC FOLDER:   |
                   |    ./frontend/src/            |                 |    ./app/               |
                   +───────────────────────────────+                 +─────────────────────────+
-
 
 ```
 
